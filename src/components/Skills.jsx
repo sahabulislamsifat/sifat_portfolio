@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaNode, FaGit } from "react-icons/fa";
 import {
   SiMongodb,
@@ -7,6 +7,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import Marquee from "react-fast-marquee";
 
 const Skills = () => {
   const techs = [
@@ -84,7 +85,7 @@ const Skills = () => {
 
   return (
     <div id="skills" className="w-full min-h-screen bg-[#0a192f] text-gray-300">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      {/* <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -125,6 +126,50 @@ const Skills = () => {
             ))}
           </div>
         </motion.div>
+      </div> */}
+      <div className="text-center mb-8">
+        <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
+          Skills
+        </p>
+        <p className="py-6">These are the technologies I've worked with</p>
+      </div>
+      {/* Content  */}
+      <div className="flex gap-8 p-4">
+        {/* Text  */}
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            excepturi id sapiente sequi architecto fugiat, voluptatem nemo,
+            magnam non minus possimus accusamus officia quo dolore? Et
+            laboriosam eos laudantium esse. Doloribus vero porro, ducimus esse
+            pariatur omnis delectus doloremque ipsum unde aliquam molestias
+            nesciunt qui architecto animi perspiciatis. Culpa odio enim in
+            blanditiis aliquam itaque, ad, ratione natus iure animi fugit quam
+            alias excepturi. Minima eligendi temporibus nam ratione hic impedit
+            inventore ab sequi fugit, expedita, nostrum debitis, quaerat
+            distinctio recusandae laudantium? Eaque, ipsa, accusamus aperiam,
+            iste eos culpa eligendi fugit ullam dignissimos labore quod quos
+            temporibus. Quos, rem a.
+          </p>
+        </div>
+        {/* Marquee  */}
+        <div className="space-y-6">
+          {techs.map((tech, index) => (
+            <Marquee
+              key={tech.id}
+              pauseOnHover={true}
+              gradient={false}
+              speed={40 + index * 5}
+              direction={index % 2 === 0 ? "left" : "right"}
+              className="flex gap-10"
+            >
+              <div className="flex flex-col items-center justify-center text-center p-4 rounded-lg shadow-lg bg-gray-800">
+                {tech.icon}
+                <span className="mt-2 text-lg font-medium">{tech.title}</span>
+              </div>
+            </Marquee>
+          ))}
+        </div>
       </div>
     </div>
   );

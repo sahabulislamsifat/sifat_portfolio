@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
       <div>
-        <h1 className="text-4xl font-signature ml-2 text-[#64ffda]">SI</h1>
+        <h1 className="text-4xl font-signature ml-2 text-[#64ffda]">Sifat</h1>
       </div>
 
       {/* Menu */}
@@ -28,7 +28,7 @@ const Navbar = () => {
           <a
             href="/resume.pdf"
             download
-            className="bg-[#64ffda] text-[#0a192f] px-4 py-2 rounded-md hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300"
+            className="bg-[#64ffda] text-[#0a192f] px-4 py-[6px] rounded hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300"
           >
             Resume
           </a>

@@ -78,7 +78,7 @@ const Contact = () => {
                     className="w-full p-2 bg-[#233554] rounded mt-2 text-[#ccd6f6] focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
                   ></textarea>
                 </div>
-                <button className="bg-[#64ffda] text-[#0a192f] py-2 px-4 rounded hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300">
+                <button className="bg-[#64ffda] cursor-pointer text-[#0a192f] py-2 px-4 rounded hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300">
                   Send Message
                 </button>
               </form>

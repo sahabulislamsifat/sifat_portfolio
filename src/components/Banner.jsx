@@ -43,13 +43,13 @@ const Banner = () => {
         <div className="flex justify-center gap-4 mt-8">
           <a
             href="#projects"
-            className="group border-2 px-6 py-3 flex items-center hover:bg-[#64ffda] hover:border-[#64ffda] hover:text-[#0a192f] duration-300"
+            className="group border-2 px-6 py-2 flex rounded-sm items-center hover:bg-[#64ffda] hover:border-[#64ffda] hover:text-[#0a192f] duration-300"
           >
             View Work
           </a>
           <a
             href="#contact"
-            className="group border-2 px-6 py-3 flex items-center bg-[#64ffda] border-[#64ffda] text-[#0a192f] hover:bg-transparent hover:text-[#64ffda] duration-300"
+            className="group border-2 px-6 py-2 rounded-sm flex items-center bg-[#64ffda] border-[#64ffda] text-[#0a192f] hover:bg-transparent hover:text-[#64ffda] duration-300"
           >
             Contact Me
           </a>
