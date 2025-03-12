@@ -8,18 +8,30 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
+      {/* Logo */}
       <div>
-        <h1 className="text-4xl font-signature ml-2 text-[#64ffda]">Sifat</h1>
+        <a
+          href="/"
+          className="cursor-pointer text-4xl font-signature ml-2 text-[#64ffda]"
+        >
+          Sifat
+        </a>
       </div>
 
-      {/* Menu */}
+      {/* Desktop Menu */}
       <ul className="hidden md:flex gap-x-8">
         {["home", "about", "skills", "projects", "contact"].map((item) => (
           <li
             key={item}
             className="hover:text-[#64ffda] cursor-pointer capitalize"
           >
-            <Link to={item} smooth duration={500}>
+            <Link
+              to={item}
+              smooth
+              duration={500}
+              className="text-gray-300 hover:text-[#64ffda] transition duration-300"
+              aria-label={`Navigate to ${item}`}
+            >
               {item}
             </Link>
           </li>
@@ -29,42 +41,63 @@ const Navbar = () => {
             href="/resume.pdf"
             download
             className="bg-[#64ffda] text-[#0a192f] px-4 py-[6px] rounded hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300"
+            aria-label="Download Resume"
           >
             Resume
           </a>
         </li>
       </ul>
 
-      {/* Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
-        {!nav ? <Menu size={30} /> : <X size={30} />}
+      {/* Hamburger Menu (Mobile) */}
+      <div
+        onClick={handleClick}
+        className="md:hidden z-10 cursor-pointer p-2"
+        aria-label="Toggle Menu"
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === "Enter" && handleClick()}
+      >
+        {!nav ? (
+          <Menu size={30} aria-hidden="true" />
+        ) : (
+          <X size={30} aria-hidden="true" />
+        )}
       </div>
 
-      {/* Mobile menu */}
-      <ul
-        className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
-        }
-      >
-        {["home", "about", "skills", "projects", "contact"].map((item) => (
-          <li key={item} className="py-6 text-4xl capitalize">
-            <Link onClick={handleClick} to={item} smooth duration={500}>
-              {item}
-            </Link>
-          </li>
-        ))}
-        <li className="py-6 text-4xl">
-          <a
-            href="/resume.pdf"
-            download
-            className=" bg-[#64ffda] text-[#0a192f] px-6 py-3 hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300"
-          >
-            Resume
-          </a>
-        </li>
-      </ul>
+      {/* Mobile Menu */}
+      {nav && (
+        <div
+          className="fixed top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center z-40"
+          aria-label="Mobile Navigation"
+        >
+          <ul className="space-y-6">
+            {["home", "about", "skills", "projects", "contact"].map((item) => (
+              <li key={item} className="text-center">
+                <Link
+                  onClick={handleClick}
+                  to={item}
+                  smooth
+                  duration={500}
+                  className="text-4xl capitalize text-gray-300 hover:text-[#64ffda] transition duration-300"
+                  aria-label={`Navigate to ${item}`}
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
+            <li className="text-center">
+              <a
+                href="/resume.pdf"
+                download
+                className="inline-block bg-[#64ffda] text-[#0a192f] px-6 py-3 text-2xl hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300"
+                aria-label="Download Resume"
+              >
+                Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

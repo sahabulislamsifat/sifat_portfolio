@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const Footer = () => {
@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-8 text-[#8892b0]">
-          <p>© 2024 Sahabul Islam Sifat. All rights reserved.</p>
+          <p>© 2025 Sahabul Islam Sifat. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,8 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+
+    const formData = new FormData(event.target);
+    formData.append("access_key", "580f8071-8bd9-4669-96db-bc00e5821545");
+
+    console.log("Sending Data:", Object.fromEntries(formData));
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    console.log("Response Data:", data);
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      setResult(data.message);
+    }
+  };
+
   return (
     <div
       id="contact"
@@ -56,11 +83,13 @@ const Contact = () => {
               </div>
             </div>
             <div className="bg-[#112240] p-6 rounded-lg">
-              <form className="flex flex-col gap-4">
+              <form onSubmit={onSubmit} className="flex flex-col gap-4">
                 <div>
                   <label className="text-[#8892b0]">Name</label>
                   <input
                     type="text"
+                    name="name"
+                    required
                     className="w-full p-2 bg-[#233554] rounded mt-2 text-[#ccd6f6] focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
                   />
                 </div>
@@ -68,20 +97,28 @@ const Contact = () => {
                   <label className="text-[#8892b0]">Email</label>
                   <input
                     type="email"
+                    name="email"
+                    required
                     className="w-full p-2 bg-[#233554] rounded mt-2 text-[#ccd6f6] focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
                   />
                 </div>
                 <div>
                   <label className="text-[#8892b0]">Message</label>
                   <textarea
+                    name="message"
                     rows={4}
+                    required
                     className="w-full p-2 bg-[#233554] rounded mt-2 text-[#ccd6f6] focus:outline-none focus:ring-2 focus:ring-[#64ffda]"
                   ></textarea>
                 </div>
-                <button className="bg-[#64ffda] cursor-pointer text-[#0a192f] py-2 px-4 rounded hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300">
+                <button
+                  type="submit"
+                  className="bg-[#64ffda] cursor-pointer text-[#0a192f] py-2 px-4 rounded hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300"
+                >
                   Send Message
                 </button>
               </form>
+              <p className="text-[#64ffda] mt-4">{result}</p>
             </div>
           </div>
         </motion.div>

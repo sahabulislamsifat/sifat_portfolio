@@ -46,7 +46,7 @@ const About = () => {
             </div>
             {/* Social Links  */}
             <div>
-              <div className="flex space-x-4 my-2 text-slate-400">
+              <div className="flex space-x-4 mb-2 mt-4 md:mt-2 text-slate-400">
                 <a
                   href="https://www.linkedin.com/in/sahabulislamsifat/"
                   className="cursor-pointer"
