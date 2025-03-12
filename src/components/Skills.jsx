@@ -31,39 +31,44 @@ const Skills = () => {
       id: 1,
       icon: <FaJs size={50} />,
       title: "JavaScript",
-      color: "text-yellow-500",
+      color: "text-[#F7E018]",
     },
     {
       id: 2,
       icon: <FaReact size={50} />,
       title: "React.js",
-      color: "text-blue-400",
+      color: "text-[#1FBEEF]",
     },
     {
       id: 3,
       icon: <FaNode size={50} />,
       title: "Node.js",
-      color: "text-green-500",
+      color: "text-[#7DB765]",
     },
     {
       id: 4,
       icon: <SiExpress size={50} />,
       title: "Express.js",
-      color: "text-gray-400",
+      color: "text-[#FFFBEB]",
     },
     {
       id: 5,
       icon: <SiMongodb size={50} />,
       title: "MongoDB",
-      color: "text-green-600",
+      color: "text-[#199555]",
     },
     {
       id: 6,
-      icon: <SiTypescript size={50} />,
+      icon: <IoLogoFirebase size={50} />,
       title: "TypeScript",
-      color: "text-blue-500",
+      color: "text-[#FF9408]",
     },
-    { id: 7, icon: <FaGit size={50} />, title: "Git", color: "text-red-500" },
+    {
+      id: 7,
+      icon: <FaGitAlt size={50} />,
+      title: "Git",
+      color: "text-red-500",
+    },
   ];
 
   return (
@@ -165,10 +170,10 @@ const Skills = () => {
                 duration: 4,
                 ease: "linear",
               }}
-              className="flex shadow-2xl gap-10 cursor-pointer"
+              className="flex shadow-xl gap-10 cursor-pointer"
             >
               <div
-                className={`flex flex-col items-center justify-center text-center p-4 shadow-2xl transition-transform duration-500 ease-in-out transform   ${tech.color}`}
+                className={`flex flex-col items-center justify-center text-center p-4 shadow-xl transition-transform duration-500 ease-in-out transform   ${tech.color}`}
               >
                 {tech.icon}
               </div>
