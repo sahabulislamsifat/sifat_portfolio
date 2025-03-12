@@ -1,132 +1,73 @@
 import React from "react";
-// import { motion } from "framer-motion";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNode, FaGit } from "react-icons/fa";
+import { motion } from "framer-motion";
+import {
+  FaJs,
+  FaReact,
+  FaNode,
+  FaGit,
+  FaHtml5,
+  FaCss3,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
 import {
   SiMongodb,
   SiExpress,
-  SiTailwindcss,
   SiTypescript,
+  SiTailwindcss,
+  SiJavascript,
+  SiMongoose,
+  SiJsonwebtokens,
+  SiPostman,
+  SiCloudinary,
 } from "react-icons/si";
-import Marquee from "react-fast-marquee";
+import { IoLogoFirebase, IoLogoNodejs } from "react-icons/io5";
+import { MdOutlineQueryStats } from "react-icons/md";
+import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
   const techs = [
     {
       id: 1,
-      icon: <FaHtml5 size={50} />,
-      title: "HTML",
-      style: "shadow-orange-500",
-      level: "95%",
+      icon: <FaJs size={50} />,
+      title: "JavaScript",
+      color: "text-yellow-500",
     },
     {
       id: 2,
-      icon: <FaCss3 size={50} />,
-      title: "CSS",
-      style: "shadow-blue-500",
-      level: "90%",
+      icon: <FaReact size={50} />,
+      title: "React.js",
+      color: "text-blue-400",
     },
     {
       id: 3,
-      icon: <FaJs size={50} />,
-      title: "JavaScript",
-      style: "shadow-yellow-500",
-      level: "90%",
+      icon: <FaNode size={50} />,
+      title: "Node.js",
+      color: "text-green-500",
     },
     {
       id: 4,
-      icon: <FaReact size={50} />,
-      title: "React",
-      style: "shadow-blue-600",
-      level: "85%",
+      icon: <SiExpress size={50} />,
+      title: "Express.js",
+      color: "text-gray-400",
     },
     {
       id: 5,
-      icon: <FaNode size={50} />,
-      title: "Node.js",
-      style: "shadow-green-500",
-      level: "80%",
+      icon: <SiMongodb size={50} />,
+      title: "MongoDB",
+      color: "text-green-600",
     },
     {
       id: 6,
-      icon: <SiExpress size={50} />,
-      title: "Express.js",
-      style: "shadow-gray-400",
-      level: "80%",
-    },
-    {
-      id: 7,
-      icon: <SiMongodb size={50} />,
-      title: "MongoDB",
-      style: "shadow-green-600",
-      level: "75%",
-    },
-    {
-      id: 8,
-      icon: <SiTailwindcss size={50} />,
-      title: "Tailwind",
-      style: "shadow-sky-400",
-      level: "85%",
-    },
-    {
-      id: 9,
       icon: <SiTypescript size={50} />,
       title: "TypeScript",
-      style: "shadow-blue-500",
-      level: "70%",
+      color: "text-blue-500",
     },
-    {
-      id: 10,
-      icon: <FaGit size={50} />,
-      title: "Git",
-      style: "shadow-red-500",
-      level: "80%",
-    },
+    { id: 7, icon: <FaGit size={50} />, title: "Git", color: "text-red-500" },
   ];
 
   return (
     <div id="skills" className="w-full min-h-screen bg-[#0a192f] text-gray-300">
-      {/* <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <div className="text-center mb-8">
-            <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
-              Skills
-            </p>
-            <p className="py-6">These are the technologies I've worked with</p>
-          </div>
-
-          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-            {techs.map(({ id, icon, title, style, level }) => (
-              <motion.div
-                key={id}
-                className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
-                whileHover={{ scale: 1.05 }}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-                viewport={{ once: true }}
-              >
-                <div className="flex flex-col items-center gap-4">
-                  {icon}
-                  <p className="mt-4">{title}</p>
-                  <div className="w-full px-4">
-                    <div className="w-full bg-gray-700 rounded-full h-2.5">
-                      <div
-                        className="bg-[#64ffda] h-2.5 rounded-full"
-                        style={{ width: level }}
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-      </div> */}
       <div className="text-center mb-8">
         <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
           Skills
@@ -134,40 +75,104 @@ const Skills = () => {
         <p className="py-6">These are the technologies I've worked with</p>
       </div>
       {/* Content  */}
-      <div className="flex gap-8 p-4">
+      <div className="flex justify-center gap-14">
         {/* Text  */}
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            excepturi id sapiente sequi architecto fugiat, voluptatem nemo,
-            magnam non minus possimus accusamus officia quo dolore? Et
-            laboriosam eos laudantium esse. Doloribus vero porro, ducimus esse
-            pariatur omnis delectus doloremque ipsum unde aliquam molestias
-            nesciunt qui architecto animi perspiciatis. Culpa odio enim in
-            blanditiis aliquam itaque, ad, ratione natus iure animi fugit quam
-            alias excepturi. Minima eligendi temporibus nam ratione hic impedit
-            inventore ab sequi fugit, expedita, nostrum debitis, quaerat
-            distinctio recusandae laudantium? Eaque, ipsa, accusamus aperiam,
-            iste eos culpa eligendi fugit ullam dignissimos labore quod quos
-            temporibus. Quos, rem a.
-          </p>
+        <div className="p-6">
+          {/* Front End Development  */}
+          <div className="mb-6">
+            <h2 className="text-lg font-semibold mb-2 text-slate-400">
+              Frontend Development
+            </h2>
+            <div className="flex flex-wrap gap-2 px-2 py-1">
+              <button className=" text-sm font-medium cursor-pointer flex text-gray-200 justify-center items-center gap-1 bg-[#FC4F13] px-2 py-[2px]">
+                <FaHtml5 /> HTML
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#306AF1] px-2 py-[2px]">
+                <FaCss3 /> CSS
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-sky-600 px-2 py-[2px]">
+                <SiTailwindcss /> Tailwind
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-700 justify-center items-center gap-1 bg-[#F7E018] px-2 py-[2px]">
+                <SiJavascript /> JavaScript
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-800 justify-center items-center gap-1 bg-[#1FBEEF] px-2 py-[2px]">
+                <FaReact /> React
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-gray-600 px-2 py-[2px]">
+                <MdOutlineQueryStats /> TanStack Query
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-700 justify-center items-center gap-1 bg-[#FF9408] px-2 py-[2px]">
+                <IoLogoFirebase /> Firebase
+              </button>
+            </div>
+          </div>
+          {/* Backend Development  */}
+          <div className="mb-6">
+            <h2 className="text-lg font-semibold mb-2 text-slate-400">
+              Backend Development
+            </h2>
+            <div className="flex flex-wrap gap-2 px-2 py-1">
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-800 justify-center items-center gap-1 bg-[#7DB765] px-2 py-[2px]">
+                <IoLogoNodejs /> Node.js
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-600 justify-center items-center gap-1 bg-[#FFFBEB] px-2 py-[2px]">
+                <SiExpress /> Express.js
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-200 justify-center items-center gap-1 bg-[#199555] px-2 py-[2px]">
+                <SiMongodb /> MongoDB
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#8C0808] px-2 py-[2px]">
+                <SiMongoose /> Mongoose
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#29292F] px-2 py-[2px]">
+                <SiJsonwebtokens /> JWT
+              </button>
+            </div>
+          </div>
+          {/* Tools */}
+          <div className="mb-6">
+            <h2 className="text-lg font-semibold mb-2 text-slate-400">Tools</h2>
+            <div className="flex flex-wrap gap-2 px-2 py-1">
+              <button className=" text-sm font-medium cursor-pointer flex text-gray-200 justify-center items-center gap-1 bg-[#F05539] px-2 py-[2px]">
+                <FaGitAlt /> Git
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#22262A] px-2 py-[2px]">
+                <FaGithub /> GitHub
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#333338] px-2 py-[2px]">
+                <VscVscode /> VS Code
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-800 justify-center items-center gap-1 bg-[#FF713E] px-2 py-[2px]">
+                <SiPostman /> Postman
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#3A4EC7] px-2 py-[2px]">
+                <SiCloudinary /> Cloudinary
+              </button>
+            </div>
+          </div>
         </div>
         {/* Marquee  */}
-        <div className="space-y-6">
+        <div className="p-4 overflow-hidden">
           {techs.map((tech, index) => (
-            <Marquee
+            <motion.div
               key={tech.id}
-              pauseOnHover={true}
-              gradient={false}
-              speed={40 + index * 5}
-              direction={index % 2 === 0 ? "left" : "right"}
-              className="flex gap-10"
+              initial={{ x: index % 2 === 0 ? "100%" : "-100%" }}
+              animate={{ x: index % 2 === 0 ? "-100%" : "100%" }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 4,
+                ease: "linear",
+              }}
+              className="flex shadow-2xl gap-10 cursor-pointer"
             >
-              <div className="flex flex-col items-center justify-center text-center p-4 rounded-lg shadow-lg bg-gray-800">
+              <div
+                className={`flex flex-col items-center justify-center text-center p-4 shadow-2xl transition-transform duration-500 ease-in-out transform   ${tech.color}`}
+              >
                 {tech.icon}
-                <span className="mt-2 text-lg font-medium">{tech.title}</span>
               </div>
-            </Marquee>
+            </motion.div>
           ))}
         </div>
       </div>
