@@ -6,40 +6,9 @@ import imageTwo from "../assets/blogs.png";
 import imageThree from "../assets/game.png";
 import imageFour from "../assets/coupon.png";
 import imageFive from "../assets/gadget.png";
-import imageSix from "../assets/blogs.png";
+import imageSix from "../assets/animal.png";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack e-commerce platform built with MERN stack featuring user authentication, product management, and payment integration.",
-      image:
-        "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGVjb21tZXJjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-      github: "#",
-      demo: "#",
-      tech: ["React", "Node.js", "MongoDB", "Express"],
-    },
-    {
-      title: "Task Management App",
-      description:
-        "A collaborative task management application with real-time updates and team collaboration features.",
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHRhc2slMjBtYW5hZ2VtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      github: "#",
-      demo: "#",
-      tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-    },
-    {
-      title: "Blog Platform",
-      description:
-        "A modern blogging platform with markdown support, user authentication, and comment system.",
-      github: "#",
-      demo: "#",
-      tech: ["React", "Node.js", "Express", "MongoDB"],
-    },
-  ];
-
   return (
     <div
       id="projects"
@@ -52,18 +21,18 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="text-center mb-8">
+          <div className="text-center mb-8 md:mb-16">
             <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
               Projects
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card One  */}
-            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 transition duration-300">
+            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 rounded transition duration-300">
               <img
                 src={imageOne}
                 alt="Project Image"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover px-5 pt-5 rounded"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#ccd6f6] mb-2">
@@ -97,7 +66,7 @@ const Projects = () => {
                     JWT
                   </span>
                 </div>
-                <div className="flex justify-end gap-4">
+                <div className="flex gap-4">
                   <a
                     href="https://github.com/Programming-Hero-Web-Course4/b10a12-client-side-sahabulislamsifat"
                     target="_blank"
@@ -118,11 +87,11 @@ const Projects = () => {
               </div>
             </div>
             {/* Card Two  */}
-            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 transition duration-300">
+            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 rounded transition duration-300">
               <img
                 src={imageTwo}
                 alt="Project Image"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover px-5 pt-5 rounded"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#ccd6f6] mb-2">
@@ -152,7 +121,7 @@ const Projects = () => {
                     Firebase
                   </span>
                 </div>
-                <div className="flex justify-end gap-4">
+                <div className="flex gap-4">
                   <a
                     href="https://github.com/programming-hero-web-course2/b10a11-client-side-sahabulislamsifat"
                     target="_blank"
@@ -173,11 +142,11 @@ const Projects = () => {
               </div>
             </div>
             {/* Card Three  */}
-            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 transition duration-300">
+            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 rounded transition duration-300">
               <img
                 src={imageThree}
                 alt="Project Image"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover px-5 pt-5 rounded"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#ccd6f6] mb-2">
@@ -205,7 +174,7 @@ const Projects = () => {
                     Firebase
                   </span>
                 </div>
-                <div className="flex justify-end gap-4">
+                <div className="flex gap-4">
                   <a
                     href="https://github.com/programming-hero-web-course2/b10-a10-client-side-sahabulislamsifat"
                     target="_blank"
@@ -226,11 +195,11 @@ const Projects = () => {
               </div>
             </div>
             {/* Card Four  */}
-            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 transition duration-300">
+            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 rounded transition duration-300">
               <img
                 src={imageFour}
                 alt="Project Image"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover px-5 pt-5 rounded"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#ccd6f6] mb-2">
@@ -254,7 +223,7 @@ const Projects = () => {
                     Firebase
                   </span>
                 </div>
-                <div className="flex justify-end gap-4">
+                <div className="flex gap-4">
                   <a
                     href="https://github.com/programming-hero-web-course1/b10-a9-authentication-sahabulislamsifat"
                     target="_blank"
@@ -275,11 +244,11 @@ const Projects = () => {
               </div>
             </div>
             {/* Card Five  */}
-            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 transition duration-300">
+            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 rounded transition duration-300">
               <img
                 src={imageFive}
                 alt="Project Image"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover px-5 pt-5 rounded"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#ccd6f6] mb-2">
@@ -300,7 +269,7 @@ const Projects = () => {
                     React
                   </span>
                 </div>
-                <div className="flex justify-end gap-4">
+                <div className="flex gap-4">
                   <a
                     href="https://github.com/Programming-Hero-Web-Course4/b10a12-client-side-sahabulislamsifat"
                     target="_blank"
@@ -321,11 +290,11 @@ const Projects = () => {
               </div>
             </div>
             {/* Card Six  */}
-            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 transition duration-300">
+            <div className="bg-[#112240] overflow-hidden shadow-lg hover:transform hover:scale-105 rounded transition duration-300">
               <img
-                src={imageOne}
+                src={imageSix}
                 alt="Project Image"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover px-5 pt-5 rounded"
               />
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#ccd6f6] mb-2">
@@ -346,7 +315,7 @@ const Projects = () => {
                     JavaScript
                   </span>
                 </div>
-                <div className="flex justify-end gap-4">
+                <div className="flex gap-4">
                   <a
                     href="https://github.com/sahabulislamsifat/AnimalVerse"
                     target="_blank"

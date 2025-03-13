@@ -80,7 +80,7 @@ const Skills = () => {
       {/* Content  */}
       <div className="flex flex-col-reverse md:flex-row">
         {/* Text  */}
-        <div className="md:mt-28 px-4 md:ml-[450px]">
+        <div className="md:mt-28 mt-12 px-4 md:ml-[450px]">
           {/* Front End Development  */}
           <div className="mb-6">
             <h2 className="text-lg font-semibold mb-2 text-slate-400">
@@ -171,7 +171,7 @@ const Skills = () => {
               className="flex shadow-xl gap-10 cursor-pointer"
             >
               <div
-                className={`flex flex-col items-center justify-center text-center p-4 shadow-xl transition-transform duration-500 ease-in-out transform   ${tech.color}`}
+                className={`flex flex-col items-center justify-center text-center py-1 px-2 shadow-xl transition-transform duration-500 ease-in-out transform   ${tech.color}`}
               >
                 {tech.icon}
               </div>

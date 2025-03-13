@@ -10,11 +10,8 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
       {/* Logo */}
       <div>
-        <a
-          href="/"
-          className="cursor-pointer text-4xl font-signature ml-2 text-[#64ffda]"
-        >
-          Sifat
+        <a href="/" className="cursor-pointer text-4xl ml-2 text-[#64ffda]">
+          <span className="text-[46px] font-semibold">S</span>ifat
         </a>
       </div>
 
@@ -89,7 +86,7 @@ const Navbar = () => {
               <a
                 href="/resume.pdf"
                 download
-                className="inline-block bg-[#64ffda] text-[#0a192f] px-6 py-3 text-2xl hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300"
+                className="inline-block bg-[#64ffda] text-[#0a192f] px-6 py-3 text-2xl hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] rounded transition duration-300"
                 aria-label="Download Resume"
               >
                 Resume

@@ -42,7 +42,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="text-center mb-8">
+          <div className="text-center mb-8 md:mb-16">
             <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
               Contact
             </p>
@@ -53,11 +53,11 @@ const Contact = () => {
                 Get In Touch
               </h3>
               <p className="text-[#8892b0]">
-                I'm currently looking for new opportunities. Whether you have a
-                question or just want to say hi, I'll try my best to get back to
-                you!
+                I'm currently looking for new opportunities, my inbox is always
+                open. Whether you have a question or just want to say hi, I'll
+                try my best to get back to you!
               </p>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 md:mt-4">
                 <div className="flex items-center gap-4">
                   <Mail className="text-[#64ffda]" />
                   <a
