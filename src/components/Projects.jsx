@@ -21,7 +21,7 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="text-center mb-8 md:mb-16">
+          <div className="text-center mb-8 py-4 md:py-0 md:mb-16">
             <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
               Projects
             </p>

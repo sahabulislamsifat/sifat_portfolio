@@ -55,7 +55,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="text-center mb-6 md:mb-16">
+          <div className="text-center mb-3 md:mb-16">
             <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
               About
             </p>
@@ -84,40 +84,6 @@ const About = () => {
             </div>
             {/* Social Links  */}
             <div>
-              {/* <div className="flex space-x-4 text-xl mb-2 mt-4 md:mt-0 text-slate-500">
-                <a
-                  href="https://www.linkedin.com/in/sahabulislamsifat/"
-                  className="cursor-pointer"
-                  title="LinkedIn"
-                  target="_blank"
-                >
-                  <FaLinkedin />
-                </a>
-                <a
-                  href="https://github.com/sahabulislamsifat"
-                  className="cursor-pointer"
-                  title="GitHub"
-                  target="_blank"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.facebook.com/sahabulislamsifat"
-                  className="cursor-pointer"
-                  title="Facebook"
-                  target="_blank"
-                >
-                  <FaFacebook />
-                </a>
-                <a
-                  href="https://x.com/sifat016"
-                  className="cursor-pointer"
-                  title="X"
-                  target="_blank"
-                >
-                  <BsTwitterX />
-                </a>
-              </div> */}
               <div className="flex gap-2 text-slate-500">
                 {socialLinks.map(({ id, icon, href, label, style }) => (
                   <a

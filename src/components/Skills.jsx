@@ -74,7 +74,7 @@ const Skills = () => {
       id="skills"
       className="w-full min-h-screen md:pt-32 p-4 pt-[105px] bg-[#0a192f] text-gray-300"
     >
-      <div className="text-center mb-8 pt-4 md:pt-0">
+      <div className="text-center mb-8 pt-8 md:pt-0">
         <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
           Skills
         </p>

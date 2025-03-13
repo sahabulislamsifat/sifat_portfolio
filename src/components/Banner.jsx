@@ -19,7 +19,6 @@ const Banner = () => {
           Sahabul Islam Sifat
         </h1>
         <h2 className="text-2xl sm:text-4xl font-bold text-[#8892b0] mb-8">
-          {/* I'm a{" "} */}
           <TypeAnimation
             sequence={[
               "MERN Stack Developer",
