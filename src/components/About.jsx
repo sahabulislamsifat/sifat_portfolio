@@ -46,7 +46,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full bg-[#0a192f] text-gray-300 min-h-screen p-4 flex flex-col justify-center"
+      className="w-full bg-[#0a192f] text-gray-300 min-h-screen p-4 pt-[105px] md:pt-0 flex flex-col justify-center"
     >
       <div className="max-w-[1000px] mx-auto">
         <motion.div
@@ -55,7 +55,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="text-center mb-16">
+          <div className="text-center mb-6 md:mb-16">
             <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
               About
             </p>

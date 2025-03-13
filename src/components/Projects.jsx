@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full bg-[#0a192f] text-gray-300 min-h-screen p-4"
+      className="w-full bg-[#0a192f] text-gray-300 min-h-screen p-4 md:pt-32 pt-[105px]"
     >
       <div className="max-w-[1000px] mx-auto">
         <motion.div

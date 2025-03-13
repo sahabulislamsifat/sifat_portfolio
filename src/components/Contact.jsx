@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full bg-[#0a192f] text-gray-300 min-h-screen p-4 flex flex-col justify-center"
+      className="w-full bg-[#0a192f] text-gray-300 min-h-screen p-4 flex flex-col justify-center pt-[105px] md:pt-0"
     >
       <div className="max-w-[1000px] mx-auto">
         <motion.div
