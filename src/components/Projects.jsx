@@ -68,7 +68,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/Programming-Hero-Web-Course4/b10a12-client-side-sahabulislamsifat"
+                    href="https://github.com/sahabulislamsifat/study_management_system_client"
                     target="_blank"
                     title="Github"
                     rel="noopener noreferrer"
@@ -76,7 +76,7 @@ const Projects = () => {
                     <Github className="hover:text-[#64ffda]" />
                   </a>
                   <a
-                    href="https://final-assignment-client.vercel.app/"
+                    href="https://study-management-system-client.vercel.app"
                     target="_blank"
                     title="Link"
                     rel="noopener noreferrer"
@@ -123,7 +123,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/programming-hero-web-course2/b10a11-client-side-sahabulislamsifat"
+                    href="https://github.com/sahabulislamsifat/echo_blogs_client"
                     target="_blank"
                     title="Github"
                     rel="noopener noreferrer"
@@ -131,7 +131,7 @@ const Projects = () => {
                     <Github className="hover:text-[#64ffda]" />
                   </a>
                   <a
-                    href="https://final-assignment-client.vercel.app/"
+                    href="https://echo-blogs.netlify.app"
                     target="_blank"
                     title="Link"
                     rel="noopener noreferrer"
@@ -176,7 +176,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/programming-hero-web-course2/b10-a10-client-side-sahabulislamsifat"
+                    href="https://github.com/sahabulislamsifat/chill_gamer_client"
                     target="_blank"
                     title="Github"
                     rel="noopener noreferrer"
@@ -184,7 +184,7 @@ const Projects = () => {
                     <Github className="hover:text-[#64ffda]" />
                   </a>
                   <a
-                    href="https://chill-gamer-by-sifat.vercel.app/"
+                    href="https://a-game-review-application-client.vercel.app"
                     target="_blank"
                     title="Link"
                     rel="noopener noreferrer"
@@ -225,7 +225,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/programming-hero-web-course1/b10-a9-authentication-sahabulislamsifat"
+                    href="https://github.com/sahabulislamsifat/discount_product_coupon"
                     target="_blank"
                     title="Github"
                     rel="noopener noreferrer"
@@ -233,7 +233,7 @@ const Projects = () => {
                     <Github className="hover:text-[#64ffda]" />
                   </a>
                   <a
-                    href="https://coupon-nestle.netlify.app/"
+                    href="https://discount-product-coupon.netlify.app"
                     target="_blank"
                     title="Link"
                     rel="noopener noreferrer"
@@ -271,7 +271,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/Programming-Hero-Web-Course4/b10a12-client-side-sahabulislamsifat"
+                    href="https://github.com/sahabulislamsifat/gadget_store"
                     target="_blank"
                     title="Github"
                     rel="noopener noreferrer"
@@ -279,7 +279,7 @@ const Projects = () => {
                     <Github className="hover:text-[#64ffda]" />
                   </a>
                   <a
-                    href="https://gadget-heaven-assignment-eight.netlify.app/"
+                    href="https://gadget-store-by.netlify.app"
                     target="_blank"
                     title="Link"
                     rel="noopener noreferrer"
@@ -317,7 +317,7 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/sahabulislamsifat/AnimalVerse"
+                    href="https://github.com/sahabulislamsifat/animal_verse"
                     target="_blank"
                     title="Github"
                     rel="noopener noreferrer"
@@ -325,7 +325,7 @@ const Projects = () => {
                     <Github className="hover:text-[#64ffda]" />
                   </a>
                   <a
-                    href="https://sahabulislamsifat.github.io/AnimalVerse/"
+                    href="https://sahabulislamsifat.github.io/animal_verse"
                     target="_blank"
                     title="Link"
                     rel="noopener noreferrer"

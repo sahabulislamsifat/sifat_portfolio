@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
       {/* Logo */}
       <div>
-        <a href="/" className="cursor-pointer text-4xl ml-2 text-[#64ffda]">
+        <a href="/" className="cursor-pointer text-4xl text-[#64ffda]">
           <span className="text-[46px] font-semibold">S</span>ifat
         </a>
       </div>
@@ -35,10 +35,11 @@ const Navbar = () => {
         ))}
         <li>
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/drive/u/0/folders/1PjzqlOi2WaouEAv4QnFEyJ2hKhTdaf-F"
             download
             className="bg-[#64ffda] text-[#0a192f] px-4 py-[6px] rounded hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300"
             aria-label="Download Resume"
+            target="_blank"
           >
             Resume
           </a>
@@ -48,7 +49,7 @@ const Navbar = () => {
       {/* Hamburger Menu (Mobile) */}
       <div
         onClick={handleClick}
-        className="md:hidden z-10 cursor-pointer p-2"
+        className="md:hidden z-10 cursor-pointer py-2"
         aria-label="Toggle Menu"
         role="button"
         tabIndex={0}
@@ -84,10 +85,11 @@ const Navbar = () => {
             ))}
             <li className="text-center">
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/drive/u/0/folders/1PjzqlOi2WaouEAv4QnFEyJ2hKhTdaf-F"
                 download
                 className="inline-block bg-[#64ffda] text-[#0a192f] px-6 py-3 text-2xl hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] rounded transition duration-300"
                 aria-label="Download Resume"
+                target="_blank"
               >
                 Resume
               </a>

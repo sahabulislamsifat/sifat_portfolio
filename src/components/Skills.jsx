@@ -72,18 +72,18 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-full min-h-screen md:pt-32 p-4 pt-[105px] bg-[#0a192f] text-gray-300"
+      className="w-full min-h-screen md:pt-32 py-4 pt-[105px] bg-[#0a192f] text-gray-300"
     >
-      <div className="text-center mb-8 pt-8 md:pt-0">
+      <div className="text-center mb-4 pt-8 md:pt-0">
         <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
           Skills
         </p>
         <p className="py-6">These are the technologies I've worked with</p>
       </div>
       {/* Content  */}
-      <div className="flex flex-col-reverse md:flex-row">
+      <div className="flex mx-auto flex-col-reverse max-w-[1000px] md:flex-row">
         {/* Text  */}
-        <div className="md:mt-28 mt-12 px-4 md:ml-[450px]">
+        <div className="md:mt-28 mx-auto mt-12 px-4">
           {/* Front End Development  */}
           <div className="mb-6">
             <h2 className="text-lg font-semibold mb-2 text-slate-400">

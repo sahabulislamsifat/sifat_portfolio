@@ -63,7 +63,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="text-justify">
               <p className="text-[#8892b0] pt-3 pb-2 pr-2">
-                As a MERN Stack Developer, I specialize in JavaScript, React.js,
+                As a Web Developer, I specialize in JavaScript, React.js,
                 Node.js, Express.js, and MongoDB. My passion lies in building
                 scalable, responsive, and user-friendly web applications while
                 maintaining clean and maintainable code.
