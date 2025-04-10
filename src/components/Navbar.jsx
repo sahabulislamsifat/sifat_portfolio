@@ -35,7 +35,7 @@ const Navbar = () => {
         ))}
         <li>
           <a
-            href="https://drive.google.com/drive/u/0/folders/1PjzqlOi2WaouEAv4QnFEyJ2hKhTdaf-F"
+            href="https://drive.google.com/file/d/127vUEaJ9DJ1itxDkcuHqr4evXgBdLxVb/view"
             download
             className="bg-[#64ffda] text-[#0a192f] px-4 py-[6px] rounded hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] transition duration-300"
             aria-label="Download Resume"
@@ -85,7 +85,7 @@ const Navbar = () => {
             ))}
             <li className="text-center">
               <a
-                href="https://drive.google.com/drive/u/0/folders/1PjzqlOi2WaouEAv4QnFEyJ2hKhTdaf-F"
+                href="https://drive.google.com/file/d/127vUEaJ9DJ1itxDkcuHqr4evXgBdLxVb/view"
                 download
                 className="inline-block bg-[#64ffda] text-[#0a192f] px-6 py-3 text-2xl hover:bg-transparent hover:text-[#64ffda] border-2 border-[#64ffda] rounded transition duration-300"
                 aria-label="Download Resume"

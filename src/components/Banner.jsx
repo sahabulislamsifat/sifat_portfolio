@@ -21,7 +21,7 @@ const Banner = () => {
         <h2 className="text-2xl sm:text-4xl font-bold text-[#8892b0] mb-8">
           <TypeAnimation
             sequence={[
-              "MERN Stack Developer",
+              "Front-End Developer",
               2000,
               "Tech Enthusiast",
               2000,

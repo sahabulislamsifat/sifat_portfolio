@@ -18,10 +18,16 @@ import {
   SiJsonwebtokens,
   SiPostman,
   SiCloudinary,
+  SiShadcnui,
+  SiMui,
+  SiNpm,
+  SiVercel,
+  SiNetlify,
 } from "react-icons/si";
 import { IoLogoFirebase, IoLogoNodejs } from "react-icons/io5";
 import { MdOutlineQueryStats } from "react-icons/md";
 import { VscVscode } from "react-icons/vsc";
+import { TbBrandVite } from "react-icons/tb";
 
 const Skills = () => {
   const techs = [
@@ -72,9 +78,9 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-full min-h-screen md:pt-32 py-4 pt-[105px] bg-[#0a192f] text-gray-300"
+      className="w-full min-h-screen md:pt-40 py-4 pt-[105px] bg-[#0a192f] text-gray-300"
     >
-      <div className="text-center mb-4 pt-8 md:pt-0">
+      <div className="text-center mb-12 pt-8 md:pt-0">
         <p className="text-4xl font-bold inline border-b-4 border-[#64ffda]">
           Skills
         </p>
@@ -83,33 +89,38 @@ const Skills = () => {
       {/* Content  */}
       <div className="flex mx-auto flex-col-reverse max-w-[1000px] md:flex-row">
         {/* Text  */}
-        <div className="md:mt-28 mx-auto mt-12 px-4">
+        <div className="mx-auto">
+          {/* Language  */}
+          <div className="mb-6">
+            <h2 className="text-lg font-semibold mb-2 text-slate-400">
+              Language
+            </h2>
+            <div className="flex flex-wrap gap-2 py-1">
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-700 justify-center items-center gap-1 bg-[#F7E018] px-2 py-[2px]">
+                <SiJavascript /> JavaScript
+              </button>
+            </div>
+          </div>
           {/* Front End Development  */}
           <div className="mb-6">
             <h2 className="text-lg font-semibold mb-2 text-slate-400">
               Frontend Development
             </h2>
             <div className="flex flex-wrap gap-2 py-1">
-              <button className=" text-sm font-medium cursor-pointer flex text-gray-200 justify-center items-center gap-1 bg-[#FC4F13] px-2 py-[2px]">
-                <FaHtml5 /> HTML
-              </button>
-              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#306AF1] px-2 py-[2px]">
-                <FaCss3 /> CSS
-              </button>
-              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-sky-600 px-2 py-[2px]">
-                <SiTailwindcss /> Tailwind
-              </button>
-              <button className=" text-sm font-medium cursor-pointer flex text-slate-700 justify-center items-center gap-1 bg-[#F7E018] px-2 py-[2px]">
-                <SiJavascript /> JavaScript
-              </button>
               <button className=" text-sm font-medium cursor-pointer flex text-slate-800 justify-center items-center gap-1 bg-[#1FBEEF] px-2 py-[2px]">
                 <FaReact /> React
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-sky-600 px-2 py-[2px]">
+                <SiTailwindcss /> Tailwind CSS
               </button>
               <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-gray-600 px-2 py-[2px]">
                 <MdOutlineQueryStats /> TanStack Query
               </button>
-              <button className=" text-sm font-medium cursor-pointer flex text-slate-700 justify-center items-center gap-1 bg-[#FF9408] px-2 py-[2px]">
-                <IoLogoFirebase /> Firebase
+              <button className=" text-sm font-medium cursor-pointer flex text-gray-200 justify-center items-center gap-1 bg-[#FC4F13] px-2 py-[2px]">
+                <FaHtml5 /> HTML5
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#306AF1] px-2 py-[2px]">
+                <FaCss3 /> CSS3
               </button>
             </div>
           </div>
@@ -128,8 +139,8 @@ const Skills = () => {
               <button className=" text-sm font-medium cursor-pointer flex text-slate-200 justify-center items-center gap-1 bg-[#199555] px-2 py-[2px]">
                 <SiMongodb /> MongoDB
               </button>
-              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#8C0808] px-2 py-[2px]">
-                <SiMongoose /> Mongoose
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-800 justify-center items-center gap-1 bg-yellow-500 px-2 py-[2px]">
+                <IoLogoFirebase /> Firebase
               </button>
               <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#29292F] px-2 py-[2px]">
                 <SiJsonwebtokens /> JWT
@@ -146,7 +157,7 @@ const Skills = () => {
               <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#22262A] px-2 py-[2px]">
                 <FaGithub /> GitHub
               </button>
-              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#333338] px-2 py-[2px]">
+              <button className=" text-sm font-medium cursor-pointer flex text-blue-400 justify-center items-center gap-1 bg-[#333338] px-2 py-[2px]">
                 <VscVscode /> VS Code
               </button>
               <button className=" text-sm font-medium cursor-pointer flex text-slate-800 justify-center items-center gap-1 bg-[#FF713E] px-2 py-[2px]">
@@ -155,11 +166,43 @@ const Skills = () => {
               <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#3A4EC7] px-2 py-[2px]">
                 <SiCloudinary /> Cloudinary
               </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-200 justify-center items-center gap-1 bg-red-700 px-2 py-[2px]">
+                <SiNpm /> NPM
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-indigo-600 justify-center items-center gap-1 bg-[#FFFBEB] px-2 py-[2px]">
+                <TbBrandVite /> Vite
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-blue-600 justify-center items-center gap-1 bg-[#FFFBEB] px-2 py-[2px]">
+                <SiMui /> MUI
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-gray-700 px-2 py-[2px]">
+                <SiShadcnui /> ShadcnUi
+              </button>
+            </div>
+          </div>
+          {/* Deployment & Hosting */}
+          <div className="mb-6">
+            <h2 className="text-lg font-semibold mb-2 text-slate-400">
+              Deployment & Hosting
+            </h2>
+            <div className="flex flex-wrap gap-2 py-1">
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-gray-800 px-2 py-[2px]">
+                <SiVercel /> Vercel
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-800 justify-center items-center gap-1 bg-[#00C7B7] px-2 py-[2px]">
+                <SiNetlify /> Netlify
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-300 justify-center items-center gap-1 bg-[#47A248] px-2 py-[2px]">
+                <SiMongodb /> MongoDB Atlas
+              </button>
+              <button className=" text-sm font-medium cursor-pointer flex text-slate-800 justify-center items-center gap-1 bg-yellow-500 px-2 py-[2px]">
+                <IoLogoFirebase /> Firebase Hosting
+              </button>
             </div>
           </div>
         </div>
         {/* Marquee  */}
-        <div className="w-1/3 mx-auto md:ml-44 md:w-32 overflow-hidden">
+        <div className="w-1/3 mx-auto md:ml-28 md:w-32 overflow-hidden">
           {techs.map((tech, index) => (
             <motion.div
               key={tech.id}
